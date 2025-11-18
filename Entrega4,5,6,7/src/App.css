@@ -1,0 +1,50 @@
+#root {
+  max-width: 1400px;               /* limite maior */
+  margin: 3rem auto;               /* margem superior maior */
+  padding: 3rem;                   /* mais espaço interno */
+  text-align: center;
+  background: hsl(210 25% 97%);    /* fundo mais suave */
+  border-radius: 1rem;             /* bordas arredondadas */
+  box-shadow: 0 8px 20px hsl(230 30% 20% / 0.08);
+}
+
+.logo {
+  height: 7em;                     /* ligeiramente maior */
+  padding: 2em;
+  will-change: filter, transform;
+  transition: filter 300ms, transform 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2.2em hsl(256 72% 55% / 0.8));
+  transform: scale(1.05);          /* leve zoom */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2.2em hsl(190 90% 60% / 0.9));
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 16s linear; /* mais rápido */
+  }
+}
+
+.card {
+  padding: 2.5em;
+  margin: 2rem auto;
+  max-width: 650px;
+  background: hsl(0 0% 100%);
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px hsl(230 30% 20% / 0.08);
+}
+
+.read-the-docs {
+  color: hsl(230 15% 40%);          /* cor mais suave e legível */
+  font-weight: 500;
+}
